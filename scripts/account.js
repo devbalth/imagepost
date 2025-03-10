@@ -12,7 +12,7 @@ form.addEventListener('submit', event => {
 
     form.reset();
 
-    account.create('[USER_ID]', userEmail, userPass).then(() => {
+    account.create(ID.unique(), userEmail, userPass).then(() => {
         window.location.replace('https://devbalth.github.io/imagepost/')
     })
 
